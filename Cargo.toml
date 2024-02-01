@@ -26,6 +26,12 @@ keywords = [
 license = "CC0-1.0"
 repository = "https://github.com/rust-bitcoin/rust-miniscript/"
 
+
+[dependencies]
+#version = "0.10.0-beta"
+bech32 = { git = "https://github.com/bitnet-io/bech32-bitnet", branch = "master" }
+#default-features = false
+
 [[example]]
 name = "htlc"
 required-features = [
@@ -68,9 +74,7 @@ version = "1.0.103"
 optional = true
 package = "serde"
 
-[dependencies.bech32]
-version = "0.10.0-beta"
-default-features = false
+
 
 [dependencies.bitcoin]
 version = "0.31.0"
